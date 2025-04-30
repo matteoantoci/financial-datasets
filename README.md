@@ -9,16 +9,46 @@ It allows Claude and other AI assistants to retrieve income statements, balance 
 ## Available Tools
 
 This MCP server provides the following tools:
+
+### Financial Statements & Metrics
 - **get_income_statements**: Get income statements for a company.
 - **get_balance_sheets**: Get balance sheets for a company.
 - **get_cash_flow_statements**: Get cash flow statements for a company.
+- **get_all_financial_statements**: Get all financial statements (income, balance, cash flow) for a company.
+- **get_segmented_revenues**: Get segmented revenue data (by product, business segment, or region) for a company.
+- **get_financial_metrics**: Get historical financial metrics and ratios for a company.
+- **get_financial_metrics_snapshot**: Get a real-time snapshot of key financial metrics for a company.
+- **search_financials_by_filters**: Search for companies based on financial filters (across income, balance, cash flow).
+- **search_financials_by_line_items**: Search for specific line items for a list of tickers.
+
+### Market Data
 - **get_current_stock_price**: Get the current / latest price of a company.
-- **get_historical_stock_prices**: Gets historical stock prices for a company.
+- **get_historical_stock_prices**: Get historical stock prices for a company.
 - **get_company_news**: Get news for a company.
-- **get_available_crypto_tickers**: Gets all available crypto tickers.
-- **get_crypto_prices**: Gets historical prices for a crypto currency.
-- **get_historical_crypto_prices**: Gets historical prices for a crypto currency.
+
+### Crypto Data
+- **get_available_crypto_tickers**: Get all available crypto tickers.
+- **get_crypto_prices**: Get historical prices for a crypto currency.
+- **get_historical_crypto_prices**: Get historical prices for a crypto currency.
 - **get_current_crypto_price**: Get the current / latest price of a crypto currency.
+
+### Company Information
+- **get_company_facts**: Get company facts (name, CIK, market cap, employees, etc.) for a company.
+
+### SEC Filings
+- **get_sec_filings**: Get SEC filings for a company.
+- **get_sec_filing_items**: Get specific items/sections from a SEC filing.
+
+### Insider & Institutional Ownership
+- **get_insider_trades**: Get insider trades for a ticker.
+- **get_institutional_ownership**: Get institutional ownership by ticker or investor.
+
+### Earnings
+- **get_earnings_press_releases**: Get earnings press releases for a ticker.
+
+### Options
+- **get_options_chain**: Get real-time options chain data for a ticker.
+- **get_historical_option_prices**: Get historical option price data for a ticker.
 
 ## Setup
 
